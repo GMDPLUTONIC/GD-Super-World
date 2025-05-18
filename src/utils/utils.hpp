@@ -8,7 +8,8 @@ namespace SuperWorld {
 		"This World is very Super",
 		"Loading classic peak",
 		"Follow the lore...",
-		"The next World is very Mega..."
+		"The next World is very Mega...",
+		"Exploring..."
 	};
 
 // logo shit
