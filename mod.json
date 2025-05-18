@@ -1,5 +1,5 @@
 {
-	"geode": "4.3.1",
+	"geode": "4.4.0",
 	"gd": {
 		"win": "2.2074",
 		"android": "2.2074",
@@ -8,7 +8,7 @@
 	},
 	"id": "zapmaniac.gd_super_world",
 	"name": "Geometry Dash: Super World",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developers": ["GMP", "ZapManiac"],
 	"description": "Geometry Dash Super World",
 	"early-load": true,
@@ -26,23 +26,23 @@
 	"incompatibilities": {
   "capeling.geometry-dash-lunar": {
    "importance": "conflicting",
-   "version": "*"
+   "version": ">=2.0.0"
   },
   "dankmeme.globed2": {
    "importance": "conflicting",
-   "version": "*"
+   "version": ">=1.0.0"
   },
-  ".teamtcm.geometry-dash-odyssey": {
+  "teamtcm.geometry-dash-odyssey": {
    "importance": "conflicting",
-   "version": "*"
+   "version": ">=1.0.0"
   },
   "itzkiba.better_progression": {
    "importance": "conflicting",
-   "version": "*"
+   "version": ">=1.0.0"
   },
   "chumiiu.geometry_dash_time_reborn": {
    "importance": "conflicting",
-   "version": "*"
+   "version": ">=1.0.0"
   }
  }
 }
