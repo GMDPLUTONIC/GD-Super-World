@@ -43,6 +43,13 @@
   "chumiiu.geometry_dash_time_reborn": {
    "importance": "conflicting",
    "version": ">=1.0.0"
-  }
+  },
+	"dependencies": [
+		{
+			"id": "geode.node-ids",
+			"version": ">=1.18.0",
+			"importance": "required"
+		}
+	]
  }
 }
