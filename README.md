@@ -1,23 +1,27 @@
-# GDSuperWorld
-This is where she makes a mod.
+## <cg>Geometry Dash: Super World</c>
 
-<img src="logo.png" width="150" alt="the mod's logo" />
+A Geometry Dash Fangame Originally Made By ZapManiac In Early 2022.
 
-*Update logo.png to change your mod's icon (please)*
+This Fangame Uses A Seperate Save File In Order To Save Your Old Data.
 
-## Getting started
-We recommend heading over to [the getting started section on our docs](https://docs.geode-sdk.org/getting-started/) for useful info on what to do next.
+# <cb>Features</c>
 
-## Build instructions
-For more info, see [our docs](https://docs.geode-sdk.org/getting-started/create-mod#build)
-```sh
-# Assuming you have the Geode CLI set up already
-geode build
-```
+- Completely New Main Levels!
 
-# Resources
-* [Geode SDK Documentation](https://docs.geode-sdk.org/)
-* [Geode SDK Source Code](https://github.com/geode-sdk/geode/)
-* [Geode CLI](https://github.com/geode-sdk/cli)
-* [Bindings](https://github.com/geode-sdk/bindings/)
-* [Dev Tools](https://github.com/geode-sdk/DevTools)
+- Unlockable Icons And Colors!
+
+- And Much... MUCH More!
+
+# **<cr>WARNING:</c>**
+
+This Mod Will <cr>BREAK</c> With The Following Mods:
+
+- **Overcharged Main Menu**
+- **Geometry Dash: Lunar**
+- **Globed**
+- **Geometry Dash: Time Reborn**
+- **Geometry Dash: Odyssey**
+
+### **Bug Reporting**:
+
+In Order To Report A Bug (Or Bugs), You Must Create A Github Issue.

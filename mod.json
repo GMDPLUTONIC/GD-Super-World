@@ -6,7 +6,7 @@
 		"mac": "2.2074",
 		"ios": "2.2074"
 	},
-	"id": "gmp.gd_super_world",
+	"id": "zapmaniac.gd_super_world",
 	"name": "Geometry Dash: Super World",
 	"version": "v1.0.0",
 	"developers": ["GMP", "ZapManiac"],
@@ -22,5 +22,27 @@
 				"resources/Music/*.mp3",
 				"Resources/Levels/*.txt"
 			]
-	}
+	},
+	"incompatibilities": {
+  "capeling.geometry-dash-lunar": {
+   "importance": "conflicting",
+   "version": "*"
+  },
+  "dankmeme.globed2": {
+   "importance": "conflicting",
+   "version": "*"
+  },
+  ".teamtcm.geometry-dash-odyssey": {
+   "importance": "conflicting",
+   "version": "*"
+  },
+  "itzkiba.better_progression": {
+   "importance": "conflicting",
+   "version": "*"
+  },
+  "chumiiu.geometry_dash_time_reborn": {
+   "importance": "conflicting",
+   "version": "*"
+  }
+ }
 }

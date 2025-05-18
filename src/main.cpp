@@ -1,9 +1,11 @@
 #include "utils/utils.hpp"
+#include "hooks/SuperWorldSelectLayer.h"
 #include <Geode/binding/MenuLayer.hpp>
 #include <Geode/Geode.hpp>
 #include <Geode/modify/LoadingLayer.hpp>
 #include <Geode/modify/MenuGameLayer.hpp>
 #include <Geode/modify/MenuLayer.hpp>
+#include <Geode/modify/PauseLayer.hpp>
 #include <Geode/modify/OptionsLayer.hpp>
 using namespace geode::prelude;
 
@@ -21,6 +23,15 @@ class $modify(MenuLayerLogo, MenuLayer) {
 
 class $modify(LoadingLayerLogo, LoadingLayer) {
 	bool init(bool fromReload) {
+		
+		#ifdef GEODE_IS_WINDOWS
+    		geode::base::get() + 0x17EC03, 0xB8, 0x02, 0x02;
+    		geode::base::get() + 0x17EC09, 0xB8, 0xB1;
+    		geode::base::get() + 0x17EC0f, 0xB8, 0x71;
+    		geode::base::get() + 0x17EC15, 0xB8, 0x9A;
+    		geode::base::get() + 0x17EC1B, 0xB8, 0x64;
+    		geode::base::get() + 0x17EC2D, 0xB8, 0x2F;
+		#endif
 
 		if (!LoadingLayer::init(fromReload))
 			return false;
@@ -71,7 +82,7 @@ class $modify(SuperWorldMenuLayer, MenuLayer) {
         if (!MenuLayer::init()) return false;
 
         if (!Mod::get()->setSavedValue("seen-intro", true)) {
-            FLAlertLayer* popup = FLAlertLayer::create("Geometry Dash SuperWorld", "Welcome to <cf>Geometry Dash SuperWorld</c>.", "Close");
+            FLAlertLayer* popup = FLAlertLayer::create("Geometry Dash Super World", "Welcome to <cf>Geometry Dash Super World</c>.", "Close");
             popup->m_scene = this;
             popup->show();
         }
@@ -103,6 +114,23 @@ class $modify(SuperWorldMenuLayer, MenuLayer) {
 	}
 
 	void onCreator(CCObject* sender) {
-	    
+	    FLAlertLayer::create("???", "This Area Is Blocked!", "Close");
+	}
+
+	void onPlay(CCObject* sender) {
+		auto SuperWorldScene = SuperWorldSelectLayer::create(0);
+		auto scene = CCScene::create();
+		scene->addChild(SuperWorldScene);
+		CCDirector::sharedDirector()->replaceScene(CCTransitionFade::create(0.5, scene));
+	}
+};
+
+class $modify(SuperWorldPauseLayer, PauseLayer) {
+	void onQuit(CCObject* sender) {
+		auto SuperWorldScene = SuperWorldSelectLayer::create(0);
+		auto scene = CCScene::create();
+		scene->addChild(SuperWorldScene);
+		CCDirector::sharedDirector()->replaceScene(CCTransitionFade::create(0.5, scene));
+		PauseLayer::onQuit(sender);
 	}
 };

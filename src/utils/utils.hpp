@@ -6,7 +6,9 @@ namespace SuperWorld {
 // loading messages
 	inline std::vector<std::string> LoadingMessages = {
 		"This World is very Super",
-		"loading classic peak"
+		"Loading classic peak",
+		"Follow the lore...",
+		"The next World is very Mega..."
 	};
 
 // logo shit
@@ -16,7 +18,7 @@ namespace SuperWorld {
 			return nullptr;
 
 		SuperWorld->setPosition({gdMainTitle->getContentSize().width / 2, -13});
-		SuperWorld->setScale(0.75f);
+		SuperWorld->setScale(0.5f);
 		gdMainTitle->setDisplayFrame(cocos2d::CCSpriteFrameCache::get()->spriteFrameByName("Geometry-Dash.png"_spr));
 		gdMainTitle->addChild(SuperWorld);
 		gdMainTitle->setPositionY(gdMainTitle->getPositionY() + 15.f);
