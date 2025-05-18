@@ -8,7 +8,7 @@
 	},
 	"id": "zapmaniac.gd_super_world",
 	"name": "Geometry Dash: Super World",
-	"version": "v1.0.3",
+	"version": "v1.0.4",
 	"developers": ["GMP", "ZapManiac"],
 	"description": "Geometry Dash Super World",
 	"early-load": true,
@@ -24,25 +24,25 @@
 			]
 	},
 	"incompatibilities": {
-  "capeling.geometry-dash-lunar": {
-   "importance": "conflicting",
-   "version": ">=2.0.0"
-  },
-  "dankmeme.globed2": {
-   "importance": "conflicting",
-   "version": ">=1.0.0"
-  },
-  "teamtcm.geometry-dash-odyssey": {
-   "importance": "conflicting",
-   "version": ">=1.0.0"
-  },
-  "itzkiba.better_progression": {
-   "importance": "conflicting",
-   "version": ">=1.0.0"
-  },
-  "chumiiu.geometry_dash_time_reborn": {
-   "importance": "conflicting",
-   "version": ">=1.0.0"
-  }
- }
+  		"capeling.geometry-dash-lunar": {
+   			"importance": "conflicting",
+   			"version": ">=2.0.0"
+  		},
+  		"dankmeme.globed2": {
+   			"importance": "conflicting",
+   			"version": ">=1.0.0"
+  		},
+  		"teamtcm.geometry-dash-odyssey": {
+   			"importance": "conflicting",
+   			"version": ">=1.0.0"
+  		},
+  		"itzkiba.better_progression": {
+   			"importance": "conflicting",
+   			"version": ">=1.0.0"
+  		},
+  		"chumiiu.geometry_dash_time_reborn": {
+   			"importance": "conflicting",
+   			"version": ">=1.0.0"
+  		}
+	}
 }
