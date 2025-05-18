@@ -5,7 +5,7 @@ using namespace geode::prelude;
 class $modify(AchievementManager)
 {
     void addManualAchievements() {
-    AchievementManager::addAchievement("geometry.ach.level01b", "The Challenger", "Completed \'Challenger\' In Normal Mode", "Complete \'Barracuda\' In Normal Mode", "cube_05", 1);
+    AchievementManager::addAchievement("geometry.ach.level01b", "The Challenger", "Completed \'Challenger\' In Normal Mode", "Complete \'Challenger\' In Normal Mode", "cube_05", 1);
     
     AchievementManager::addAchievement("geometry.ach.level02b", "Danque?", "Completed \'Danque\' In Normal Mode", "Complete \'Danque\' In Normal Mode", "cube_06", 1);
     
