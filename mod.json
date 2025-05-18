@@ -8,7 +8,7 @@
 	},
 	"id": "zapmaniac.gd_super_world",
 	"name": "Geometry Dash: Super World",
-	"version": "v1.0.3",
+	"version": "v1.0.4",
 	"developers": ["GMP", "ZapManiac"],
 	"description": "Geometry Dash Super World",
 	"early-load": true,
