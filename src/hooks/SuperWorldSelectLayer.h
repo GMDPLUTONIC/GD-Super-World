@@ -1,5 +1,5 @@
-#ifndef SUBZERO_SELECT_LAYER_H
-#define SUBZERO_SELECT_LAYER_H
+#ifndef SUPERWORLD_SELECT_LAYER_H
+#define SUPERWORLD_SELECT_LAYER_H
 
 #include "cocos2d.h"
 
